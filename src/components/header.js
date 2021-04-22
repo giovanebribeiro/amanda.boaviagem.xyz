@@ -1,42 +1,21 @@
-import * as React from "react"
-import PropTypes from "prop-types"
-import { Link } from "gatsby"
+import React from "react"
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-const Header = ({ siteTitle }) => (
-  <header
-    style={{
-      background: `rebeccapurple`,
-      marginBottom: `1.45rem`,
-    }}
-  >
-    <div
-      style={{
-        margin: `0 auto`,
-        maxWidth: 960,
-        padding: `1.45rem 1.0875rem`,
-      }}
-    >
-      <h1 style={{ margin: 0 }}>
-        <Link
-          to="/"
-          style={{
-            color: `white`,
-            textDecoration: `none`,
-          }}
-        >
-          {siteTitle}
-        </Link>
-      </h1>
-    </div>
-  </header>
-)
+import NavMenu from "./navmenu"
+import HeaderSocial from "./header-social"
 
-Header.propTypes = {
-  siteTitle: PropTypes.string,
-}
+export default () => (
+    <header>
+      <div className="logo">
+         <AnchorLink to="/#top">
+           <img alt="" src={ useSiteMetadata().logo } />
 
-Header.defaultProps = {
-  siteTitle: ``,
-}
+         </AnchorLink>
+      </div>
 
-export default Header
+      <NavMenu />
+      <HeaderSocial />
+
+    </header>
+  )

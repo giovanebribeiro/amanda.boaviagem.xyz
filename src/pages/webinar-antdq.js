@@ -27,23 +27,10 @@ export default () => {
   return(
     <>
       <Layout>
-        {/* Style Guide Section
-        ================================================== */}
-        <section id="styles"
-          style= {{
-            padding: '90px 0 72px',
-            background: '#fff'
-          }}
-        >
-          <div className="row section-head">
-            <h1>Página principal em construção</h1>
-            <p className="lead add-bottom">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditipraesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-            </p>
-          </div> {/* Row End*/}
-
-          </section>
-
+        { sections.map(section => {
+          let Tagname = availableSections[section]
+          return <Tagname />
+        }) }
       </Layout>
     </>
   )

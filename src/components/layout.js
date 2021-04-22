@@ -1,55 +1,47 @@
-/**
- * Layout component that queries for data
- * with Gatsby's useStaticQuery component
- *
- * See: https://www.gatsbyjs.com/docs/use-static-query/
- */
+import React from "react"
+import { Helmet } from "react-helmet"
 
-import * as React from "react"
-import PropTypes from "prop-types"
-import { useStaticQuery, graphql } from "gatsby"
+import { useSiteMetadata } from "../hooks/use-site-metadata"
 
 import Header from "./header"
-import "./layout.css"
+import Footer from "./footer"
 
-const Layout = ({ children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
+import "../styles/default.css"
+import "../styles/layout.css"
+import "../styles/media-queries.css"
+import "../styles/animate.css"
+import "../styles/prettyPhoto.css"
 
-  return (
+import 'typeface-open-sans';
+import 'typeface-montserrat';
+
+import { config } from '@fortawesome/fontawesome-svg-core'
+import '@fortawesome/fontawesome-svg-core/styles.css'
+config.autoAddCss = false
+
+export default function Layout ({ children }){
+
+  const { title, description, author, favicon } = useSiteMetadata()
+
+  return(
     <>
-      <Header siteTitle={data.site.siteMetadata?.title || `Title`} />
-      <div
-        style={{
-          margin: `0 auto`,
-          maxWidth: 960,
-          padding: `0 1.0875rem 1.45rem`,
-        }}
-      >
-        <main>{children}</main>
-        <footer
-          style={{
-            marginTop: `2rem`,
-          }}
-        >
-          © {new Date().getFullYear()}, Built with
-          {` `}
-          <a href="https://www.gatsbyjs.com">Gatsby</a>
-        </footer>
-      </div>
-    </>
+    <Helmet>
+      <title>{ title }</title>
+      <meta name="description" content={ description } />
+      <meta name="author" content={ author.name } />
+
+    	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
+
+      <link rel="shortcut icon" href={'/' + favicon } type="image/png" />
+    </Helmet>
+
+    <Header />
+
+  <main id="top">
+    {children}
+  </main>
+
+  <Footer />
+  </>
   )
 }
-
-Layout.propTypes = {
-  children: PropTypes.node.isRequired,
-}
-
-export default Layout
