@@ -17,10 +17,9 @@ module.exports = {
     sections: [
       `hero`,
       `features`,
-      `pricing`,
-      `call-to-action`,
       `screenshots`,
       `testimonials`,
+      `pricing`,
       `subscribe`
     ],
 
@@ -35,9 +34,16 @@ module.exports = {
 
     /* Provide social media accounts. Remove or add new services. (The value 'fa' is the name of FontAwesome icon to display. Choose from here: https://fontawesome.com/cheatsheet/free/brands ) */
     social: [
-      { service: `Instagram`,
+      { 
+        service: `Instagram`,
         url : `https://instagram.com/pagina90_`,
-        fa: `instagram` },
+        fa: `instagram` 
+      },
+      {
+        service: `Linkedin`,
+        url: `https://www.linkedin.com/in/amanda-boaviagem/`,
+        fa: `linkedin`
+      }
     ],
 
     /* Path to favicon and logo (located inside the 'static' folder) */

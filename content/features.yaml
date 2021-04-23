@@ -1,20 +1,11 @@
 -
-  name: design
-  title: Simple, Clean and Modern Design.
-  body: Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt. Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-  image: 'images/feature-image-1.png'
+  name: sinopse
+  title: Um romance de Amanda Boaviagem
+  body: Amor e Morte andam lado a lado. O dia a dia da jovem médica Manuela no hospital em que trabalha em tempos de pandemia do Covid19. Flashes de um passado não tão distante mas feliz, a lua de mel dela e Pedro na Riviera Maya, nas cálidas águas do Caribe. O medo e a insegurança que sente ao ter de encarar a pandemia sozinha. O marido preso em outro país sem poder voltar ao Brasil. Amizades, sonhos, descobertas. Uma luz em sua vida quando tudo parecia perdido. Um antídoto para a pandemia? Acompanhe Manuela nesses tempos difusos (e confusos) em que a verdade é desmentida e o que era solução se torna problema. Sua sanidade mental está sendo posta à prova a todo o momento nessa pandemia? Manuela está pronta pro jogo e disposta a arriscar tudo. E você? O que você seria capaz de fazer por amor?
+  image: 'images/capa-small.png'
 -
-  name: responsive
-  title: Fully Responsive.
-  body: Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam.Our library is continually refreshed with the latest on web technology so you'll never fall behind. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
-  image: 'images/feature-image-2.png'
--
-  name: cross-browser
-  title: Cross-Browser Compatible.
-  body: Lorem ipsum dolor sit amet, ea eum labitur scripserit, illum complectitur deterruisset at pro. Odio quaeque reformidans est eu, expetendis intellegebat has ut, viderer invenire ut his. Has molestie percipit an. Falli volumus efficiantur sed id, ad vel noster propriae. Ius ut etiam vivendo, graeci iudicabit constituto at mea. No soleat fabulas prodesset vel, ut quo solum dicunt. Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-  image: 'images/feature-image-3.png'
--
-  name: video
-  title: Video Support.
-  body: Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam. No soleat fabulas prodesset vel, ut quo solum dicunt. Nec et amet vidisse mentitum. Cibo mutat nulla ei eam.
-  vimeo: 14592941
+  name: sobre 
+  title: Sobre a autora
+  body: "Sou escritora, bookstagrammer, analista de registro na JUCEPE, ex-advogada e leitora ávida. Sempre fui apaixonada pelas letras desde criancinha e meus pais sempre me incentivaram a ler. Adoro a ideia de viajar por novos mundos (reais ou imaginários) sem sair do lugar apenas nas páginas de um livro. Já participei de alguns concursos literários e fui selecionada (biografia literária abaixo). Destaque para menção honrosa no Prêmio de Literatura Juvenil Ferreira de Castro (Portugal) em 2006. Participei de algumas entrevistas, projetos (como o “Troca de Carta entre escritores” da escritora Zuleide Lima) e, mais recentemente, de alguns podcasts, como o RS Entrevista de Rubem Salomão e o Adulto em Movimento de Tâmara Chaves.  Ano passado organizei o Amigo Secreto Solidário Literário Virtual com a participação de Lilian Cardoso (da agência LC Agência de Comunicação, a agência que mais divulga livros no Brasil) e de várias autoras nacionais com a arrecadação e doação de livros para as crianças carentes ajudadas pela ONG Sonhar Acordado Recife (criação do ‘Cordel Solidário” para a ocasião). Fiz vários cursos relacionados à escrita e literatura como a “Oficina de Escrita Criativa” do professor Rodrigo Gurgel (desse mesmo professor também fiz o curso de “Prática de Leitura e Formação de Estilo” e, há pouco tempo, o de “Crônicas”). Bem como as “Oficina de Criação Literária On-line” a de “Revisão Textual On-line” ambas da Metamorfose Cursos, o curso “Escritor Milionário” da Viver de Blog (do Henrique Carvalho). Sou aluna do curso Escritores Admiráveis da Lilian Cardoso e sempre participo dos cursos e oficinas gratuitas que a Lilian ministra on-line. Estou sempre procurando me capacitar. "
+
+  image: 'images/amanda.jpeg'

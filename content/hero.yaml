@@ -1,13 +1,13 @@
-headline: The perfect template to showcase your awesome product and service.
+headline: Um evento de lançamento 100% online e gratuito.
 
-body: Aenean condimentum, lacus sit amet luctus lobortis, dolores et quas molestias excepturi enim tellus ultrices elit, amet consequat enim elit noneas sit amet luctu. Quis nostrum exercitationem ullam corporis suscipit laboriosam.
+body: 'A espera finalmente está chegando ao fim: Dia DD/MM às HH:mm, teremos o lançamento oficial do primeiro livro de Amanda Boaviagem!'
 
 button1:
-  label: Free Trial
-  to: '/#'
+  label: Quero me inscrever agora!
+  to: '/webinar-antdq/#subscribe'
 
 button2:
-  label: Learn More
-  to: '/#features'
+  label: Saiba mais
+  to: '/webinar-antdq/#features'
 
 image: images/hero-image.png

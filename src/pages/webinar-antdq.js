@@ -17,9 +17,9 @@ export default () => {
   const availableSections = {
     "hero": Hero,
     "features": Features,
+    "screenshots": Screenshots,
     "pricing": Pricing,
     "call-to-action": CalltoAction,
-    "screenshots": Screenshots,
     "testimonials": Testimonials,
     "subscribe": Subscribe
   }

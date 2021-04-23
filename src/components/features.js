@@ -1,6 +1,8 @@
 import React from "react"
 import ScrollAnimation from 'react-animate-on-scroll'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 import content from "../../content/features.yaml"
+import contentHero from "../../content/hero.yaml"
 
 export default () => (
 
@@ -52,5 +54,13 @@ export default () => (
        </div>
      )
    })}
+    <div className="row">
+      <div className="twelve columns">
+        <div className="buttons">
+          <AnchorLink className="button trial animated shake" to={ contentHero.button1.to }>{ contentHero.button1.label }</AnchorLink>
+        </div>
+      </div>
+    </div>
+    
   </section>
 )

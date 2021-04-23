@@ -6,6 +6,9 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 
+import { AnchorLink } from "gatsby-plugin-anchor-links"
+import contentHero from "../../content/hero.yaml"
+
 export default () => {
 
   library.add(fas)
@@ -17,34 +20,29 @@ export default () => {
         <p>{ content.body }</p>
       </div>
 
-      <div className="row">
-        <div className="pricing-tables bgrid-quarters s-bgrid-halves">
+      <div className="row offset-4">
+        <div className="pricing-tables bgrid-halves">
           { content.plans.map((plan, index) =>
             <div className="column">
               <div className="price-block">
-                <h3 className="plan-title">
-                  <i className="fa"><FontAwesomeIcon icon={ plan.fa } /></i>
-                  { plan.title }
-                </h3>
-                <p className="plan-price">
-                  { plan.price }
-                  <span>{ plan.per }</span>
-                </p>
 
                 <ul className="features">
                   { plan.features.map((value, index) =>
                     <li>{ value }</li>
                   )}
                 </ul>
-                <footer className="plan-sign-up">
-                  <Link className="button" to={ plan.signup.to }>
-                    { plan.signup.label }
-                  </Link>
-                </footer>
               </div>
             </div>
           )
           }
+        </div>
+      </div>
+
+      <div className="row">
+        <div className="twelve columns">
+          <div className="buttons">
+            <AnchorLink className="button trial animated shake" to={ contentHero.button1.to }>{ contentHero.button1.label }</AnchorLink>
+          </div>
         </div>
       </div>
     </section>
