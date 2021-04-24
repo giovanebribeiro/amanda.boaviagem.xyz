@@ -1,5 +1,6 @@
 import React from "react"
 import ScrollAnimation from 'react-animate-on-scroll'
+import { AnchorLink } from "gatsby-plugin-anchor-links"
 
 import content from '../../content/subscribe.yaml'
 
@@ -31,7 +32,7 @@ export default () => (
               name="EMAIL"
               className="email"
               id="mce-EMAIL"
-              placeholder="email address"
+              placeholder="digite aqui seu melhor e-mail"
               required
             />
           </ScrollAnimation>
@@ -46,7 +47,7 @@ export default () => (
                >
                  <input
                    type="submit"
-                   value="Subscribe"
+                   value="Inscrever"
                    name="subscribe"
                    id="mc-embedded-subscribe"
                    className="button"
@@ -57,7 +58,7 @@ export default () => (
            </form>
          </div>
 
-         <p><small>{ content.small }</small></p>
+         <p><small>{ content.small } <AnchorLink to="/politica-privacidade">política de privacidade</AnchorLink></small></p>
 
        </div>
 

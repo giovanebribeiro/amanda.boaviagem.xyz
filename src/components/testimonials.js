@@ -40,11 +40,16 @@ const MySlider = () =>{
           <div className="twelve columns flex-container">
           <Slider {...settings} style={{ userSelect: 'text' }}>
             { content.quotes.map((quote, index) => (
-              <div>
-                <blockquote>
-                  <p>{ quote.text }</p>
-                  <cite>{ quote.cite }</cite>
-                </blockquote>
+              <div className="row offset-3">
+                <div className="pricing-tables bgrid-halves">
+
+                  <div className="column">
+                    <div className="price-block">
+                      <img src={ quote.img } alt={quote.alt} />
+                    </div>
+                  </div>
+                  
+                </div>
               </div>
             ))}
           </Slider>
