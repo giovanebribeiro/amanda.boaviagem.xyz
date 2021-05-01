@@ -10,4 +10,4 @@ button2:
   label: Saiba mais
   to: '/webinar-antdq/#features'
 
-image: images/hero-image.png
+image: /images/hero-image.png
