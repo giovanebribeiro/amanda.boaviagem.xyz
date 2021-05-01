@@ -15,9 +15,10 @@ export default () => (
 
   <div className="row">
     <div className="twelve columns">
+
       <div id="mc_embed_signup">
         <form
-          action="http://facebook.us8.list-manage.com/subscribe/post?u=cdb7b577e41181934ed6a6a44&amp;id=e65110b38d"
+          action="https://gmail.us1.list-manage.com/subscribe/post?u=9e534ff37fa43868c9fce8138&amp;id=fdcdd440d4"
           method="post"
           id="mc-embedded-subscribe-form"
           name="mc-embedded-subscribe-form"
@@ -36,7 +37,7 @@ export default () => (
               required
             />
           </ScrollAnimation>
-             {/* <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups--> */}
+             
              <div style={{position: "absolute", left: "-5000px"}}>
                <input type="text" name="b_cdb7b577e41181934ed6a6a44_e65110b38d" defaultValue="" />
              </div>
@@ -56,7 +57,7 @@ export default () => (
              </div>
 
            </form>
-         </div>
+        </div>
 
          <p><small>{ content.small } <AnchorLink to="/politica-privacidade">política de privacidade</AnchorLink></small></p>
 
