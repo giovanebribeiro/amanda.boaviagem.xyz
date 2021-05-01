@@ -40,7 +40,8 @@ export default () => (
         <div className={ 'row feature ' + value.name }>
           <div className={ 'six columns ' + pos }>
             <h3>{ value.title }</h3>
-            <p>{ value.body }</p>
+            <br/><br/>
+            <p style={{textAlign: "justify"}}>{ value.body }</p>
           </div>
 
           <ScrollAnimation
