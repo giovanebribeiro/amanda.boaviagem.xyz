@@ -17,9 +17,10 @@ module.exports = {
     sections: [
       `hero`,
       `features`,
+      `call-to-action`,
       `screenshots`,
       `testimonials`,
-      `subscribe`
+      `subscribe`,
     ],
 
     /* Configure the navigation menu */

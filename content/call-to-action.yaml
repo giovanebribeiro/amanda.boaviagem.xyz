@@ -1,7 +1,7 @@
 title:
-  text: Host This Template on Dreamhost.
+  text: Não perca tempo!
   url: http://www.dreamhost.com/r.cgi?287326|STYLESHOUT
-body: 'Looking for an awesome and reliable webhosting? Try <a href="http://www.dreamhost.com/r.cgi?287326|STYLESHOUT"><span>DreamHost</span></a>. Get <span>$50 off</span> when you sign up with the promocode <span>STYLESHOUT</span>.'
+body: 'Ao se inscrever você garante o seu e-book exclusivo Nossa Rivieira Maya, spin-off de Amor nos Tempos de Quarentena, mostrando a lua de mel de Manu e Pedro na Riviera Maya, antes dos acontecimentos da história original de Amor nos Tempos de Quarentena. (OBS: Esse e-book não será vendido, pelo menos não agora. Talvez daqui a um ou dois anos). Ele é um presente para você, participante do webinar. Então garanta já o seu!'
 button:
-  label: Sign Up Now
-  url: 'http://www.dreamhost.com/r.cgi?287326|STYLESHOUT'
+  label: 'Inscreva-se agora'
+  url: '/webinar-antdq/#subscribe'
