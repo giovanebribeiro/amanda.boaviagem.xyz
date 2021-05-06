@@ -68,5 +68,15 @@ module.exports = {
       { text: `autoraamanda@boaviagem.xyz`, url: `mailto:autoraamanda@boaviagem.xyz`},
     ],
   },
-  plugins: [ `gatsby-plugin-anchor-links`, `gatsby-plugin-smoothscroll`, `react-scrollspy` ],
+  plugins: [ 
+    `gatsby-plugin-anchor-links`, 
+    `gatsby-plugin-smoothscroll`, 
+    `react-scrollspy`,
+    {
+      resolve: `gatsby-plugin-facebook-pixel`,
+      options: {
+        pixelId: "392221925740366",
+      },
+    },
+  ],
 }
