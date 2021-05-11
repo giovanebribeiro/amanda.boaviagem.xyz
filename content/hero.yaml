@@ -1,9 +1,9 @@
 headline: Um evento de lançamento 100% online e gratuito.
 
-body: 'A espera finalmente está chegando ao fim: Dia 24/05/21 às 20h, teremos o lançamento oficial do primeiro livro de Amanda Boaviagem!'
+body: 'A espera finalmente está chegando ao fim: Dia 24/05/21 às 20h, teremos o lançamento oficial do primeiro livro de Amanda Boaviagem.'
 
 button1:
-  label: Quero me inscrever agora!
+  label: Quero me inscrever agora
   to: '/webinar-antdq/#subscribe'
 
 button2:
