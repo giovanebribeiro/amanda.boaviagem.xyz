@@ -32,6 +32,8 @@ export default function Layout ({ children }){
 
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
+      <meta name="facebook-domain-verification" content="1c1b34t00xiyv4fd1u3ibjzfk2uw3w" />
+
       <link rel="shortcut icon" href={'/' + favicon } type="image/png" />
     </Helmet>
 
