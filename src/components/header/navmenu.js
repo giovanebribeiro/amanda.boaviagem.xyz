@@ -2,7 +2,7 @@ import React, { useState } from "react"
 import scrollTo from "gatsby-plugin-smoothscroll"
 import Scrollspy from "react-scrollspy"
 
-import { useSiteMetadata } from "../hooks/use-site-metadata"
+import { useSiteMetadata } from "../../hooks/use-site-metadata"
 
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faBars } from '@fortawesome/free-solid-svg-icons'

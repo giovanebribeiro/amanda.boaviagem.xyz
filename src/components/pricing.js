@@ -7,7 +7,7 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { fas } from '@fortawesome/free-solid-svg-icons'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import contentHero from "../../content/hero.yaml"
+import contentHero from "./hero/hero.yaml"
 
 export default () => {
 
