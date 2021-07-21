@@ -16,6 +16,7 @@ module.exports = {
     /* Choose and arrange the sections to be displayed on the landing page */
     sections: [
       `hero`,
+      `about`,
       /*`features`,
       `call-to-action`,
       `screenshots`,

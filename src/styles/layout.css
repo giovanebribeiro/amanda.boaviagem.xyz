@@ -247,6 +247,46 @@ ul.nav li.current button { color: #fff; }
 #hero .buttons .trial:hover { background: #F86A5A; }
 #hero .buttons .learn-more {}
 
+/* ------------------------------------------------------------------ */
+/* d. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+   background: #accae2 url(img/about-bg.png);
+   padding-top: 96px;
+   padding-bottom: 78px;
+   overflow: hidden;
+}
+
+#about .about-box {
+   background: #2d638e;
+   border-radius: 30px;
+}
+
+#about .right {
+   padding-left: 32px;
+   float: right;
+}
+#about .left {
+   padding-right: 32px;
+   float: left;
+}
+
+#about h3 {
+   font: bold 16px/24px 'Montserrat', sans-serif;
+   padding-top: 60px;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+   color: #222;
+}
+
+#about img {
+   padding-top: 60px;
+   border-radius: 30px;
+}
+
+.fluid-video-wrapper { margin-top: 18px; }
+
 
 /* ------------------------------------------------------------------ */
 /* d. Features Section
