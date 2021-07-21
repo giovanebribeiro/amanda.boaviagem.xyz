@@ -3,6 +3,9 @@ import React from "react"
 import Layout from "../components/layout"
 
 import Hero from "../components/hero/hero"
+import About from "../components/about/about"
+
+
 import Features from "../components/features"
 import Pricing from "../components/pricing"
 import CalltoAction from "../components/call-to-action"
@@ -16,6 +19,7 @@ export default () => {
   const { sections } = useSiteMetadata()
   const availableSections = {
     "hero": Hero,
+    "about": About,
     "features": Features,
     "pricing": Pricing,
     "call-to-action": CalltoAction,
