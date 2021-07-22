@@ -4,6 +4,7 @@ import Layout from "../components/layout"
 
 import Hero from "../components/hero/hero"
 import About from "../components/about/about"
+import Store from "../components/store/store"
 
 
 import Features from "../components/features"
@@ -20,6 +21,7 @@ export default () => {
   const availableSections = {
     "hero": Hero,
     "about": About,
+    "store": Store,
     "features": Features,
     "pricing": Pricing,
     "call-to-action": CalltoAction,
