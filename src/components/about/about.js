@@ -30,13 +30,9 @@ export default class LightboxExample extends Component {
               <p style={{textAlign: "justify"}}>{ content.body2 }</p>
             </div>
 
-            <ScrollAnimation
-              animateIn="pulse"
-              animateOnce={true}
-              initiallyVisible={true}
-              className={ 'four columns right'}>
+            <div className={ 'four columns img-helper'}>
               <img src={ content.image } alt="" />
-            </ScrollAnimation>
+            </div>
 
           </div>
           

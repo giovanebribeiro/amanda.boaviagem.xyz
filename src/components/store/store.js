@@ -19,6 +19,9 @@ export default () => (
 
   <section id='store'>
 
+    <h2><img border="0" src="/images/store/loja_title.png"/></h2>
+
+
     {content.map((value, index) => {
 
       let pos, imagepos
@@ -33,26 +36,22 @@ export default () => (
       let media = ( <img border="0" src={ value.cover } alt="" /> )
 
       return(
-        <div className={ 'row feature store' }>
+        <div className={ 'row store left' }>
           <div className={ 'six columns ' + pos }>
             <h3>{ value.title + ' - ' + value.author }</h3>
             <br/><br/>
             <p style={{textAlign: "justify"}}>{ value.body }</p>
             <br/>
-            <a target="blank" href={value.link}>Quero ler</a>
+            <a className="button button-sale" target="blank" href={value.link}>Quero ler</a>
           </div>
 
-          <ScrollAnimation
-            animateIn="pulse"
-            animateOnce={true}
-            initiallyVisible={true}
-            className={ 'six columns feature-media ' + imagepos }
-            >
+          <div className={ 'six columns feature-media ' + imagepos}>
             { media }
-          </ScrollAnimation>
-       </div>
+          </div>
+        </div>
      )
    })}
+
     
   </section>
 )

@@ -262,20 +262,18 @@ ul.nav li.current button { color: #fff; }
 
 #about {
    background: #accae2 url(img/about-bg.png);
-   background-size: auto;
+   height: 600px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    padding-top: 96px;
    overflow: hidden;
-   position: static;
-   top: 0px;
-   left: 0px;
-   margin: 0px;
 }
-
 #about .about-box {
    background: #2d638e;
    border-radius: 30px;
 }
-
 #about .right {
    padding-left: 32px;
    float: right;
@@ -284,19 +282,27 @@ ul.nav li.current button { color: #fff; }
    padding-right: 32px;
    float: left;
 }
-
 #about h3 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
+   font: 32px 'Goldplay', sans-serif;
    padding-top: 60px;
-   text-transform: uppercase;
    letter-spacing: 1px;
-   color: #222;
+   color: #fff;
+}
+#about p {
+   font: 'Goldplay', sans-serif;
+   color: #ffffff;
+   line-height: 17px;
+}
+#about img {
+   border-radius: 30px;
+   vertical-align: middle;
 }
 
-#about img {
-   padding-top: 100px;
-   border-radius: 30px;
-   width: 100%
+#about .img-helper {
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   padding-top: 60px;
 }
 
 .fluid-video-wrapper { margin-top: 18px; }
@@ -307,8 +313,13 @@ ul.nav li.current button { color: #fff; }
 
 #store {
    background: #accae2 url(img/store-bg.png);
-   padding-top: 78px;
-   overflow: hidden;
+   height: 790px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
 }
 #store .store {
    margin-top: 30px;
@@ -323,11 +334,23 @@ ul.nav li.current button { color: #fff; }
    float: left;
 }
 #store h3 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
-   text-transform: uppercase;
+   font: bold 32px 'Goldplay', sans-serif;
    letter-spacing: 1px;
-   color: #222;
+   color: #fff;
 }
+#store h2 {
+   text-align: center;
+}
+#store .button-sale {
+   background: #CC5378;
+   border-radius: 30px;
+}
+#store p {
+   font: 'Goldplay' sans-serif;
+   color: #222;
+   line-height: 17px;
+}
+
 .fluid-video-wrapper { margin-top: 18px; }
 
 
