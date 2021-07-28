@@ -26,6 +26,11 @@
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
 
+* {
+   margin:0;
+   padding:0;
+}
+
 body { background: #f9fbf4; }
 
 .section-head {
@@ -167,17 +172,21 @@ ul.nav li.current button { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. Hero Section
+/* c. Hero Section (carrossel)
 /* ------------------------------------------------------------------ */
 
 #hero {
    padding-top: 66px;
    background: #2d638e url(img/hero-bg.png);
    overflow: hidden;
+   display: block;
+   position: static;
+   top: 0;
+   left: 0;
 }
 
 /* For high-res devices */
-@media
+/*@media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
@@ -186,7 +195,7 @@ ul.nav li.current button { color: #fff; }
 		background-size: 200px 200px;
 	}
 
-}
+}*/
 
 #hero .row { max-width: 1040px; }
 
@@ -253,16 +262,18 @@ ul.nav li.current button { color: #fff; }
 
 #about {
    background: #accae2 url(img/about-bg.png);
+   height: 600px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
    padding-top: 96px;
-   padding-bottom: 78px;
    overflow: hidden;
 }
-
 #about .about-box {
    background: #2d638e;
    border-radius: 30px;
 }
-
 #about .right {
    padding-left: 32px;
    float: right;
@@ -271,18 +282,73 @@ ul.nav li.current button { color: #fff; }
    padding-right: 32px;
    float: left;
 }
-
 #about h3 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
+   font: 32px 'Goldplay', sans-serif;
    padding-top: 60px;
-   text-transform: uppercase;
    letter-spacing: 1px;
-   color: #222;
+   color: #fff;
+}
+#about p {
+   font: 'Goldplay', sans-serif;
+   color: #ffffff;
+   line-height: 17px;
+}
+#about img {
+   border-radius: 30px;
+   vertical-align: middle;
 }
 
-#about img {
+#about .img-helper {
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
    padding-top: 60px;
+}
+
+.fluid-video-wrapper { margin-top: 18px; }
+
+/* ------------------------------------------------------------------ */
+/* d. Store Section
+/* ------------------------------------------------------------------ */
+
+#store {
+   background: #accae2 url(img/store-bg.png);
+   height: 790px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
+}
+#store .store {
+   margin-top: 30px;
+   margin-bottom: 54px;
+}
+#store .right {
+   padding-left: 32px;
+   float: right;
+}
+#store .left {
+   padding-right: 32px;
+   float: left;
+}
+#store h3 {
+   font: bold 32px 'Goldplay', sans-serif;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#store h2 {
+   text-align: center;
+}
+#store .button-sale {
+   background: #CC5378;
    border-radius: 30px;
+}
+#store p {
+   font: 'Goldplay' sans-serif;
+   color: #222;
+   line-height: 17px;
 }
 
 .fluid-video-wrapper { margin-top: 18px; }
@@ -397,7 +463,7 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 #screenshots {
-   background: #fff url(img/grey.png);
+   background: #fff; /*url(img/grey.png);*/
    padding-top: 96px;
    padding-bottom: 120px;
 }
@@ -408,7 +474,7 @@ ul.features li:nth-child(even) { }
 (min-resolution: 192dpi) {
 
    #screenshots {
-      background: #fff url(img/grey_@2X.png);
+      background: #fff; /*url(img/grey_@2X.png);*/
       background-size: 397px 322px;
    }
 
@@ -567,7 +633,7 @@ ul.features li:nth-child(even) { }
 }
 
 /* For high-res devices */
-@media
+/*@media
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
@@ -576,7 +642,7 @@ ul.features li:nth-child(even) { }
 		background-size: 46px 29px;
 	}
 
-}
+}*/
 
 #testimonials .quote-left,
 #testimonials .quote-right {

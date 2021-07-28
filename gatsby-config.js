@@ -17,6 +17,7 @@ module.exports = {
     sections: [
       `hero`,
       `about`,
+      `store`,
       /*`features`,
       `call-to-action`,
       `screenshots`,

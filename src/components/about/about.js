@@ -21,22 +21,18 @@ export default class LightboxExample extends Component {
 
         <div className={ 'row about' }>
 
-          <div className="twelve columns flex-container about-box">
+          <div className="ten offset-1 columns left about-box">
 
-            <div className={ 'six columns left' }>
+            <div className={ 'eight columns left' }>
               <h3>{ content.title }</h3>
               
               <p style={{textAlign: "justify"}}>{ content.body }</p>
               <p style={{textAlign: "justify"}}>{ content.body2 }</p>
             </div>
 
-            <ScrollAnimation
-              animateIn="pulse"
-              animateOnce={true}
-              initiallyVisible={true}
-              className={ 'six columns right'}>
+            <div className={ 'four columns img-helper'}>
               <img src={ content.image } alt="" />
-            </ScrollAnimation>
+            </div>
 
           </div>
           
