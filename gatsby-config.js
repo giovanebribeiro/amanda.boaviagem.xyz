@@ -18,6 +18,7 @@ module.exports = {
       `hero`,
       `about`,
       `store`,
+      `bio`,
       /*`features`,
       `call-to-action`,
       `screenshots`,

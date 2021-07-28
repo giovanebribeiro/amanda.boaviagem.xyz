@@ -5,6 +5,7 @@ import Layout from "../components/layout"
 import Hero from "../components/hero/hero"
 import About from "../components/about/about"
 import Store from "../components/store/store"
+import Bio from "../components/bio/bio"
 
 
 import Features from "../components/features"
@@ -22,6 +23,7 @@ export default () => {
     "hero": Hero,
     "about": About,
     "store": Store,
+    "bio": Bio,
     "features": Features,
     "pricing": Pricing,
     "call-to-action": CalltoAction,

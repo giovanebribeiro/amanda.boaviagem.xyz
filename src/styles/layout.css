@@ -353,7 +353,45 @@ ul.nav li.current button { color: #fff; }
 
 .fluid-video-wrapper { margin-top: 18px; }
 
+/* ------------------------------------------------------------------ */
+/* d. Bio Section
+/* ------------------------------------------------------------------ */
+#bio {
+   background: #accae2 url(img/bio-bg.png);
+   height: 790px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
+}
+#bio .bio {
+   margin-top: 250px;
+   margin-bottom: 54px;
+}
+#bio p {
+   font: 'Goldplay' sans-serif;
+   color: #fff;
+   line-height: 20px;
+}
+#bio h1 {
+   font: 32px 'Goldplay' sans-serif;
+   color: #fff;
+   text-align: center;
+}
 
+/* For high-res devices */
+@media
+(-webkit-min-device-pixel-ratio: 2),
+(min-resolution: 192dpi) {
+
+   #bio {
+      background: #fff; /*url(img/grey_@2X.png);*/
+      background-size: 397px 322px;
+   }
+
+}
 /* ------------------------------------------------------------------ */
 /* d. Features Section
 /* ------------------------------------------------------------------ */
