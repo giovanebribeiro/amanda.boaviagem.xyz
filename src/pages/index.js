@@ -6,7 +6,7 @@ import Hero from "../components/hero/hero"
 import About from "../components/about/about"
 import Store from "../components/store/store"
 import Bio from "../components/bio/bio"
-
+import CV from "../components/cv/cv"
 
 import Features from "../components/features"
 import Pricing from "../components/pricing"
@@ -24,6 +24,7 @@ export default () => {
     "about": About,
     "store": Store,
     "bio": Bio,
+    "cv": CV,
     "features": Features,
     "pricing": Pricing,
     "call-to-action": CalltoAction,

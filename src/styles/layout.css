@@ -392,6 +392,35 @@ ul.nav li.current button { color: #fff; }
    }
 
 }
+
+/* ------------------------------------------------------------------ */
+/* d. cv Section
+/* ------------------------------------------------------------------ */
+#cv {
+   background: #accae2 url(img/cv-bg.png);
+   height: 300px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
+}
+#cv .cv {
+   margin-top: 32px;
+   margin-bottom: 54px;
+   background: #ffffff;
+}
+#cv p {
+   font: 'Goldplay' sans-serif;
+   color: #fff;
+   line-height: 20px;
+}
+#cv h1 {
+   font: 32px 'Goldplay' sans-serif;
+   color: #fff;
+   text-align: center;
+}
 /* ------------------------------------------------------------------ */
 /* d. Features Section
 /* ------------------------------------------------------------------ */
