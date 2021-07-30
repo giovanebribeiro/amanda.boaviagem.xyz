@@ -427,7 +427,7 @@ ul.nav li.current button { color: #fff; }
 #cv .center {
    margin: auto;
    width: 100%;
-   padding: 10px;
+   padding: 20px;
 }
 #cv p {
    font: 'Goldplay' sans-serif;
@@ -435,7 +435,7 @@ ul.nav li.current button { color: #fff; }
    line-height: 20px;
 }
 #cv h1 {
-   font: 32px 'Goldplay' sans-serif;
+   font: 50px 'Goldplay' sans-serif;
    color: #2d638e;
    text-align: center;
 }

@@ -13,7 +13,9 @@ export default () => (
         <div className={ 'row cv' }>
 
           <div className={ 'six columns award-box'}>
-            <h1><FontAwesomeIcon icon={faGraduationCap} /></h1>
+            <div className={'center'}>
+              <h1><FontAwesomeIcon icon={faGraduationCap} /></h1>
+            </div>
           </div>
 
           <div className={ 'six columns ' }>
