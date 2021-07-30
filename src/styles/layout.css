@@ -410,6 +410,24 @@ ul.nav li.current button { color: #fff; }
    margin-top: 32px;
    margin-bottom: 54px;
    background: #ffffff;
+   border-radius: 30px;
+   width: 40%
+}
+#cv .award-box {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width: 120px;
+   height: 120px;
+   border: 2px solid #e3eaef;
+   background: #fff;
+   margin: 10px;
+   border-radius: 30px;
+}
+#cv .center {
+   margin: auto;
+   width: 100%;
+   padding: 10px;
 }
 #cv p {
    font: 'Goldplay' sans-serif;
@@ -418,7 +436,7 @@ ul.nav li.current button { color: #fff; }
 }
 #cv h1 {
    font: 32px 'Goldplay' sans-serif;
-   color: #fff;
+   color: #2d638e;
    text-align: center;
 }
 /* ------------------------------------------------------------------ */

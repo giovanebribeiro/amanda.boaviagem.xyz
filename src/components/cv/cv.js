@@ -1,6 +1,6 @@
 import React from "react"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faAward } from '@fortawesome/free-solid-svg-icons'
+import { faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 import content from "../../../content/cv.yaml"
 
 export default () => (
@@ -12,8 +12,8 @@ export default () => (
       return(
         <div className={ 'row cv' }>
 
-          <div className={ 'six columns'}>
-            <h1><FontAwesomeIcon icon={faAward} /></h1>
+          <div className={ 'six columns award-box'}>
+            <h1><FontAwesomeIcon icon={faGraduationCap} /></h1>
           </div>
 
           <div className={ 'six columns ' }>
