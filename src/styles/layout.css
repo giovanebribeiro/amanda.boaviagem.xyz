@@ -403,7 +403,7 @@ ul.nav li.current button { color: #fff; }
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   padding-top: 96px;
+   padding-top: 70px;
    overflow: hidden;;
 }
 #cv .cv {
@@ -411,7 +411,7 @@ ul.nav li.current button { color: #fff; }
    margin-bottom: 54px;
    background: #ffffff;
    border-radius: 30px;
-   width: 40%
+   width: 30%
 }
 #cv .award-box {
    box-sizing: border-box;
@@ -427,17 +427,25 @@ ul.nav li.current button { color: #fff; }
 #cv .center {
    margin: auto;
    width: 100%;
-   padding: 20px;
+   padding: 5px;
+   padding-top: 20px;
 }
 #cv p {
    font: 'Goldplay' sans-serif;
-   color: #fff;
-   line-height: 20px;
+   color: #2d638e;
+   line-height: 1px;
 }
 #cv h1 {
    font: 50px 'Goldplay' sans-serif;
    color: #2d638e;
    text-align: center;
+}
+#cv h3 {
+   text-align: left;
+   color: #2d638e;
+}
+#cv .award-title {
+   padding-top: 35px;
 }
 /* ------------------------------------------------------------------ */
 /* d. Features Section

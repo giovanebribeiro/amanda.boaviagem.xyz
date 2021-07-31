@@ -14,11 +14,11 @@ export default () => (
 
           <div className={ 'six columns award-box'}>
             <div className={'center'}>
-              <h1><FontAwesomeIcon icon={faGraduationCap} /></h1>
+              <h1 className={'fa-4x'}><FontAwesomeIcon icon={faGraduationCap} /></h1>
             </div>
           </div>
 
-          <div className={ 'six columns ' }>
+          <div className={ 'eight columns award-title' }>
             <h3>{ value.title }</h3>
             <p style={{textAlign: "justify"}}>{ value.body }</p>
           </div>
