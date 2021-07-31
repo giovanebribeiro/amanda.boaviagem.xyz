@@ -392,6 +392,61 @@ ul.nav li.current button { color: #fff; }
    }
 
 }
+
+/* ------------------------------------------------------------------ */
+/* d. cv Section
+/* ------------------------------------------------------------------ */
+#cv {
+   background: #accae2 url(img/cv-bg.png);
+   height: 300px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 70px;
+   overflow: hidden;;
+}
+#cv .cv {
+   margin-top: 32px;
+   margin-bottom: 54px;
+   background: #ffffff;
+   border-radius: 30px;
+   width: 30%
+}
+#cv .award-box {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width: 120px;
+   height: 120px;
+   border: 2px solid #e3eaef;
+   background: #fff;
+   margin: 10px;
+   border-radius: 30px;
+}
+#cv .center {
+   margin: auto;
+   width: 100%;
+   padding: 5px;
+   padding-top: 20px;
+}
+#cv p {
+   font: 'Goldplay' sans-serif;
+   color: #2d638e;
+   line-height: 1px;
+}
+#cv h1 {
+   font: 50px 'Goldplay' sans-serif;
+   color: #2d638e;
+   text-align: center;
+}
+#cv h3 {
+   text-align: left;
+   color: #2d638e;
+}
+#cv .award-title {
+   padding-top: 35px;
+}
 /* ------------------------------------------------------------------ */
 /* d. Features Section
 /* ------------------------------------------------------------------ */

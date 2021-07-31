@@ -19,6 +19,7 @@ module.exports = {
       `about`,
       `store`,
       `bio`,
+      `cv`,
       /*`features`,
       `call-to-action`,
       `screenshots`,
