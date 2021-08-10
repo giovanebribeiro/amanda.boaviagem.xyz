@@ -12,7 +12,7 @@ import Features from "../components/features"
 import Pricing from "../components/pricing"
 import CalltoAction from "../components/call-to-action"
 import Screenshots from "../components/screenshots"
-import Testimonials from "../components/testimonials"
+import Testimonials from "../components/testimonials/testimonials"
 import Subscribe from "../components/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"

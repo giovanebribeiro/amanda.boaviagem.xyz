@@ -3,7 +3,7 @@ import Slider from "react-slick"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
 
-import content from '../../content/testimonials.yaml'
+import content from '../../../content/testimonials.yaml'
 
 
 const MySlider = () =>{
@@ -31,6 +31,7 @@ const MySlider = () =>{
 
   return (
     <section id="testimonials">
+      <h2><img border="0" src="/images/testimonials/title.png"/></h2>
       <div className="row content">
         <span><i className="quote-left fa"><FontAwesomeIcon icon={ faQuoteLeft } /></i></span>
         <div className="text-container">

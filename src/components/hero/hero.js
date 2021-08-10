@@ -1,7 +1,7 @@
 import React from "react"
 import Slider from "react-slick"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faQuoteRight, faQuoteLeft } from '@fortawesome/free-solid-svg-icons'
+import { faQuoteRight, faQuoteLeft, faCloudShowersHeavy } from '@fortawesome/free-solid-svg-icons'
 import content from "./hero.yaml"
 
 const MySlider = () =>{
@@ -12,7 +12,7 @@ const MySlider = () =>{
     speed: 500,
     slidesToShow: 1,
     slidesToScroll: 1,
-    arrows: true,
+    arrows: false,
     adaptiveHeight: true,
     autoplay: true,
     autoplaySpeed: 7000,
@@ -29,11 +29,9 @@ const MySlider = () =>{
 
   return (
     <section id="hero">
-      <div className="row">
         
-        
-          <div className="twelve columns flex-container">
-          <Slider {...settings} style={{ userSelect: 'text' }}>
+          <div>
+          <Slider {...settings}>
             { content.quotes.map((quote, index) => (
                     
               <img src={ quote.img } alt={quote.alt} />
@@ -42,7 +40,6 @@ const MySlider = () =>{
           </Slider>
           </div>
 
-      </div>
     </section>
   )
 }

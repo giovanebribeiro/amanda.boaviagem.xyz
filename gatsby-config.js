@@ -20,10 +20,10 @@ module.exports = {
       `store`,
       `bio`,
       `cv`,
+      `testimonials`,
       /*`features`,
       `call-to-action`,
       `screenshots`,
-      `testimonials`,
       `subscribe`,*/
     ],
 
