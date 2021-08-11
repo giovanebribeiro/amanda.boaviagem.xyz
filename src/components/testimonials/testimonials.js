@@ -32,32 +32,15 @@ const MySlider = () =>{
   return (
     <section id="testimonials">
       <h2><img border="0" src="/images/testimonials/title.png"/></h2>
-      <div className="row content">
-        <span><i className="quote-left fa"><FontAwesomeIcon icon={ faQuoteLeft } /></i></span>
-        <div className="text-container">
-          <div className="twelve columns">
-            <h1>{ content.title }</h1>
-          </div>
-          <div className="twelve columns flex-container">
+      <div>
           <Slider {...settings} style={{ userSelect: 'text' }}>
             { content.quotes.map((quote, index) => (
-              <div className="row offset-3">
-                <div className="pricing-tables bgrid-halves">
 
-                  <div className="column">
-                    <div className="price-block">
-                      <img src={ quote.img } alt={quote.alt} />
-                    </div>
-                  </div>
+              <img src={ quote.img } alt={quote.alt} />
                   
-                </div>
-              </div>
             ))}
           </Slider>
-          </div>
 
-        </div>
-        <span><i className="quote-right fa"><FontAwesomeIcon icon={ faQuoteRight } /></i></span>
       </div>
     </section>
   )

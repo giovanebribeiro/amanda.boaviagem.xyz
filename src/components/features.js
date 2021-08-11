@@ -2,7 +2,7 @@ import React from "react"
 import ScrollAnimation from 'react-animate-on-scroll'
 import { AnchorLink } from "gatsby-plugin-anchor-links"
 import content from "../../content/features.yaml"
-import contentHero from "./hero/hero.yaml"
+import contentHero from "../../content/hero.yaml"
 
 export default () => (
 

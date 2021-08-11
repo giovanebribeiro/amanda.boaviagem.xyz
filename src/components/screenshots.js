@@ -8,7 +8,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faPlus } from '@fortawesome/free-solid-svg-icons'
 
 import { AnchorLink } from "gatsby-plugin-anchor-links"
-import contentHero from "./hero/hero.yaml"
+import contentHero from "../../content/hero.yaml"
 
 const screenshots = content.screenshots
 

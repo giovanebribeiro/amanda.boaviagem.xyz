@@ -2,7 +2,7 @@ import React from "react"
 import Slider from "react-slick"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faQuoteRight, faQuoteLeft, faCloudShowersHeavy } from '@fortawesome/free-solid-svg-icons'
-import content from "./hero.yaml"
+import content from "../../../content/hero.yaml"
 
 const MySlider = () =>{
 
