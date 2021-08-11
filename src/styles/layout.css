@@ -26,6 +26,11 @@
 /* a. General and Common Styles
 /* ------------------------------------------------------------------ */
 
+* {
+   margin:0;
+   padding:0;
+}
+
 body { background: #f9fbf4; }
 
 .section-head {
@@ -53,9 +58,9 @@ body { background: #f9fbf4; }
 /* ------------------------------------------------------------------ */
 
 header {
-   height: 54px;
+   height: 100px;
    width: 100%;
-   background: #1f628e;
+   background: #2d638e;
    position: fixed;
    left: 0;
    top: 0;
@@ -66,7 +71,7 @@ header {
 header .logo {
    margin-left: 36px;
    margin-right: 20px;
-   margin-top: 7px;
+   margin-top: 0px;
    float: left;
    width: auto;
    z-index: 991;
@@ -85,23 +90,23 @@ header .logo a {
 	padding: 0;
 	border: none;
 	outline: none;
-   width: 92px;
-   height: 24px;
+   width: 300px;
+   height: auto;
 }
 
 /* header social */
 header .header-social {
-	font-size: 20px;
+	font-size: 30px;
    font-weight: normal;
    line-height: 54px;
    color: #424a56;
-   margin: 0 10px 0 0;
+   margin: 15px 60px 30px 0px;
    padding: 0;
    float: right;
 }
 header .header-social li {
    display: inline-block;
-   margin-right: 20px;
+   margin-right: 10px;
 }
 header .header-social li a { color: #fff; }
 header .header-social li a:hover { color: #11ABB0; }
@@ -167,13 +172,142 @@ ul.nav li.current button { color: #fff; }
 
 
 /* ------------------------------------------------------------------ */
-/* c. Hero Section
+/* c. Hero Section (carrossel)
 /* ------------------------------------------------------------------ */
 
 #hero {
-   padding-top: 66px;
-   background: #23292f url(img/hero-bg.png);
+   height: 790px;
+   width: 100%;
    overflow: hidden;
+   display: block;
+   position: static;
+   top: 0;
+   left: 0;
+}
+
+/* ------------------------------------------------------------------ */
+/* d. About Section
+/* ------------------------------------------------------------------ */
+
+#about {
+   background: #accae2 url(img/about-bg.png);
+   height: 600px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;
+}
+#about .about-box {
+   background: #2d638e;
+   border-radius: 30px;
+}
+#about .right {
+   padding-left: 32px;
+   float: right;
+}
+#about .left {
+   padding-right: 32px;
+   float: left;
+}
+#about h3 {
+   font: 32px 'Goldplay', sans-serif;
+   padding-top: 60px;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#about p {
+   font: 'Goldplay', sans-serif;
+   color: #ffffff;
+   line-height: 17px;
+}
+#about img {
+   border-radius: 30px;
+   vertical-align: middle;
+}
+
+#about .img-helper {
+   display: inline-block;
+   height: 100%;
+   vertical-align: middle;
+   padding-top: 60px;
+}
+
+.fluid-video-wrapper { margin-top: 18px; }
+
+/* ------------------------------------------------------------------ */
+/* d. Store Section
+/* ------------------------------------------------------------------ */
+
+#store {
+   background: #accae2 url(img/store-bg.png);
+   height: 790px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
+}
+#store .store {
+   margin-top: 30px;
+   margin-bottom: 54px;
+}
+#store .right {
+   padding-left: 32px;
+   float: right;
+}
+#store .left {
+   padding-right: 32px;
+   float: left;
+}
+#store h3 {
+   font: bold 32px 'Goldplay', sans-serif;
+   letter-spacing: 1px;
+   color: #fff;
+}
+#store h2 {
+   text-align: center;
+}
+#store .button-sale {
+   background: #CC5378;
+   border-radius: 30px;
+}
+#store p {
+   font: 'Goldplay' sans-serif;
+   color: #222;
+   line-height: 17px;
+}
+
+.fluid-video-wrapper { margin-top: 18px; }
+
+/* ------------------------------------------------------------------ */
+/* d. Bio Section
+/* ------------------------------------------------------------------ */
+#bio {
+   background: #accae2 url(img/bio-bg.png);
+   height: 790px;
+   width: 100%;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 96px;
+   overflow: hidden;;
+}
+#bio .bio {
+   margin-top: 250px;
+   margin-bottom: 54px;
+}
+#bio p {
+   font: 'Goldplay' sans-serif;
+   color: #fff;
+   line-height: 20px;
+}
+#bio h1 {
+   font: 32px 'Goldplay' sans-serif;
+   color: #fff;
+   text-align: center;
 }
 
 /* For high-res devices */
@@ -181,72 +315,91 @@ ul.nav li.current button { color: #fff; }
 (-webkit-min-device-pixel-ratio: 2),
 (min-resolution: 192dpi) {
 
-	#hero {
-		background: #23292f url(img/hero-bg_@2X.png);
-		background-size: 200px 200px;
-	}
+   #bio {
+      background: #fff; /*url(img/grey_@2X.png);*/
+      background-size: 397px 322px;
+   }
 
 }
 
-#hero .row { max-width: 1040px; }
-
-/* Hero Text */
-.hero-text {
-	color: #676e73;
-   width: 83%;
-   text-align: center;
-   margin: 54px auto 24px auto;
-}
-.hero-text h1 {
-   font: 600 40px/1.2em 'Montserrat', sans-serif;
-   color: #fff;
-   padding: 0;
-   margin: 0;
-   text-shadow: 0px 1px 4px rgba(0, 0, 0, .2);
-}
-.hero-text h1 span,
-.hero-text a { color: #11ABB0; }
-.hero-text p {
-   font: 16px/30px 'Open Sans', sans-serif;
-   padding: 0;
-   margin: 12px 8% 0;
-   text-shadow: 0px 1px 2px rgba(0, 0, 0, .2);
-}
-
-/* Hero Image */
-.hero-image {
+/* ------------------------------------------------------------------ */
+/* e. cv Section
+/* ------------------------------------------------------------------ */
+#cv {
+   background: #accae2 url(img/cv-bg.png);
+   height: 300px;
    width: 100%;
-   margin: 0 auto;
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   padding-top: 70px;
+   overflow: hidden;;
 }
-.hero-image img {
-   vertical-align: bottom;
-   display: block;
+#cv .cv {
+   margin-top: 32px;
+   margin-bottom: 54px;
+   background: #ffffff;
+   border-radius: 30px;
+   width: 30%
 }
-
-/* Hero CTA Buttons */
-#hero .buttons {
+#cv .award-box {
+   box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   -webkit-box-sizing: border-box;
+   width: 120px;
+   height: 120px;
+   border: 2px solid #e3eaef;
+   background: #fff;
+   margin: 10px;
+   border-radius: 30px;
+}
+#cv .center {
+   margin: auto;
+   width: 100%;
+   padding: 5px;
+   padding-top: 20px;
+}
+#cv p {
+   font: 'Goldplay' sans-serif;
+   color: #2d638e;
+   line-height: 1px;
+}
+#cv h1 {
+   font: 50px 'Goldplay' sans-serif;
+   color: #2d638e;
    text-align: center;
-   margin: 0 0 18px 0;
 }
-#hero .buttons .button {
-   font: bold 14px/24px 'Montserrat', sans-serif;
-   text-transform : uppercase;
-   letter-spacing: 2px;
+#cv h3 {
+   text-align: left;
+   color: #2d638e;
 }
-#hero .buttons .trial {
-   background: #f64b39;
-   margin-right: 30px;
+#cv .award-title {
+   padding-top: 35px;
+}
 
-   -webkit-animation-delay: 10s;
-      -moz-animation-delay: 10s;
-       -ms-animation-delay: 10s;
-        -o-animation-delay: 10s;
-   -webkit-animation-iteration-count: 3;
-      -moz-animation-iteration-count: 3;
-}
-#hero .buttons .trial:hover { background: #F86A5A; }
-#hero .buttons .learn-more {}
 
+/* ------------------------------------------------------------------
+/* Testimonials
+/* ------------------------------------------------------------------ */
+
+#testimonials {
+   height: 790px;
+   width: 100%;
+   overflow: hidden;
+   display: block;
+   position: static;
+   top: 0;
+   left: 0;
+}
+
+#testimonials h2 {
+   text-align: center;
+   z-index: 100;
+   position: absolute;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
+}
 
 /* ------------------------------------------------------------------ */
 /* d. Features Section
@@ -357,7 +510,7 @@ ul.features li:nth-child(even) { }
 /* ------------------------------------------------------------------ */
 
 #screenshots {
-   background: #fff url(img/grey.png);
+   background: #fff; /*url(img/grey.png);*/
    padding-top: 96px;
    padding-bottom: 120px;
 }
@@ -368,7 +521,7 @@ ul.features li:nth-child(even) { }
 (min-resolution: 192dpi) {
 
    #screenshots {
-      background: #fff url(img/grey_@2X.png);
+      background: #fff; /*url(img/grey_@2X.png);*/
       background-size: 397px 322px;
    }
 
@@ -511,82 +664,7 @@ ul.features li:nth-child(even) { }
 }
 
 
-/* ------------------------------------------------------------------
-/* h. Testimonials
-/* ------------------------------------------------------------------ */
 
-#testimonials {
-   background: #10999E url(img/escheresque.png);
-   padding-top: 112px;
-   padding-bottom: 66px;
-   position: relative;
-   min-height: 198px;
-   width: 100%;
-   overflow: hidden;
-   text-align: center;
-}
-
-/* For high-res devices */
-@media
-(-webkit-min-device-pixel-ratio: 2),
-(min-resolution: 192dpi) {
-
-	#testimonials {
-		background: #10999E url(img/escheresque_@2X.png);
-		background-size: 46px 29px;
-	}
-
-}
-
-#testimonials .quote-left,
-#testimonials .quote-right {
-   position: absolute;
-   top: 50%;
-   color: #fff;
-   font-size: 40px;
-   margin-top: -25px;
-}
-#testimonials .quote-left { left: 5%; }
-#testimonials .quote-right { right: 5%; }
-
-#testimonials .text-container {
-   width: 86%;
-   margin: 0 auto;
-}
-#testimonials h1 {
-   font: bold 16px/24px 'Montserrat', sans-serif;
-   color: #6AECF0;
-   text-transform: uppercase;
-   letter-spacing: 2px;
-   margin-bottom: 36px;
-}
-
-/*	Blockquotes */
-#testimonials blockquote {
-   margin: 0 0px 30px 0px;
-   padding-left: 0;
-   position: relative;
-}
-#testimonials blockquote:before { content: none; }
-#testimonials blockquote p {
-   font-family: 'Open Sans', sans-serif;
-   font-style: normal;
-   font-weight: 600;
-   color: #fff;
-   padding: 0;
-   font-size: 26px;
-   line-height: 42px;
-}
-#testimonials blockquote cite {
-   display: block;
-   font-size: 12px;
-   font-style: normal;
-   line-height: 18px;
-   color: #fff;
-}
-#testimonials blockquote cite:before { content: "\2014 \0020"; }
-#testimonials blockquote cite a,
-#testimonials blockquote cite a:visited { color: #8B9798; border: none }
 
 /* Flex Slider
 /* ------------------------------------------------------------------ */

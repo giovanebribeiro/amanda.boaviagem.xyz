@@ -16,11 +16,15 @@ module.exports = {
     /* Choose and arrange the sections to be displayed on the landing page */
     sections: [
       `hero`,
-      `features`,
+      `about`,
+      `store`,
+      `bio`,
+      `cv`,
+      `testimonials`,
+      /*`features`,
       `call-to-action`,
       `screenshots`,
-      `testimonials`,
-      `subscribe`,
+      `subscribe`,*/
     ],
 
     /* Configure the navigation menu */
@@ -48,7 +52,7 @@ module.exports = {
 
     /* Path to favicon and logo (located inside the 'static' folder) */
     favicon: `favicon.png`,
-    logo: `/images/logoHeader.png`,
+    logo: `/images/header/logo.png`,
 
     /* Logo and text to show in footer */
     footer: {

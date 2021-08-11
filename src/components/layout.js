@@ -3,7 +3,7 @@ import { Helmet } from "react-helmet"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-import Header from "./header"
+import Header from "./header/header"
 import Footer from "./footer"
 
 import "../styles/default.css"

@@ -2,12 +2,17 @@ import React from "react"
 
 import Layout from "../components/layout"
 
-import Hero from "../components/hero"
+import Hero from "../components/hero/hero"
+import About from "../components/about/about"
+import Store from "../components/store/store"
+import Bio from "../components/bio/bio"
+import CV from "../components/cv/cv"
+
 import Features from "../components/features"
 import Pricing from "../components/pricing"
 import CalltoAction from "../components/call-to-action"
 import Screenshots from "../components/screenshots"
-import Testimonials from "../components/testimonials"
+import Testimonials from "../components/testimonials/testimonials"
 import Subscribe from "../components/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
@@ -16,6 +21,10 @@ export default () => {
   const { sections } = useSiteMetadata()
   const availableSections = {
     "hero": Hero,
+    "about": About,
+    "store": Store,
+    "bio": Bio,
+    "cv": CV,
     "features": Features,
     "pricing": Pricing,
     "call-to-action": CalltoAction,
@@ -35,14 +44,14 @@ export default () => {
             background: '#fff'
           }}
         >
-          <div className="row section-head">
-            <h1>Página principal em construção</h1>
-            <p className="lead add-bottom">
-              At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditipraesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.
-            </p>
-          </div> {/* Row End*/}
+          { 
+            sections.map(section => {
+              let Tagname = availableSections[section]
+              return <Tagname />
+            }) 
+          }
 
-          </section>
+        </section>
 
       </Layout>
     </>

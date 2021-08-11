@@ -32,6 +32,16 @@ d. Default Styles
 @import url("~slick-carousel/slick/slick.css");
 @import url("~slick-carousel/slick/slick-theme.css");
 
+@font-face {
+   font-family: "Goldplay";
+   src: url('font/Goldplay/Goldplay\ Alt\ Light.otf');
+}
+
+@font-face {
+   font-family: "Goldplay-bold";
+   src: url('font/Goldplay/Goldplay\ Alt\ Bold.otf');
+}
+
 
 
 /* ------------------------------------------------------------------ */
