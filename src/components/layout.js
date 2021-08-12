@@ -39,11 +39,11 @@ export default function Layout ({ children }){
 
     <Header />
 
-  <main id="top">
-    {children}
-  </main>
+      <main id="top">
+        {children}
+      </main>
 
-  <Footer />
+    <Footer />
   </>
   )
 }

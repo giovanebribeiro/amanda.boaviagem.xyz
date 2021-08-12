@@ -7,13 +7,8 @@ import About from "../components/about/about"
 import Store from "../components/store/store"
 import Bio from "../components/bio/bio"
 import CV from "../components/cv/cv"
-
-import Features from "../components/features"
-import Pricing from "../components/pricing"
-import CalltoAction from "../components/call-to-action"
-import Screenshots from "../components/screenshots"
 import Testimonials from "../components/testimonials/testimonials"
-import Subscribe from "../components/subscribe"
+import Subscribe from "../components/subscribe/subscribe"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
@@ -25,10 +20,6 @@ export default () => {
     "store": Store,
     "bio": Bio,
     "cv": CV,
-    "features": Features,
-    "pricing": Pricing,
-    "call-to-action": CalltoAction,
-    "screenshots": Screenshots,
     "testimonials": Testimonials,
     "subscribe": Subscribe
   }

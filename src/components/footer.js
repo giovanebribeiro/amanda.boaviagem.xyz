@@ -3,55 +3,24 @@ import { AnchorLink } from "gatsby-plugin-anchor-links"
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 import scrollTo from "gatsby-plugin-smoothscroll"
 
-
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-import { faChevronUp, faMapMarkerAlt, faUsers, faEnvelope } from '@fortawesome/free-solid-svg-icons'
+import { faChevronUp } from '@fortawesome/free-solid-svg-icons'
+
+import FooterSocial from "./footer-social"
 
 export default () => {
-  const { social, footer, address, contacts } = useSiteMetadata()
+  const { footer} = useSiteMetadata()
   return (
     <footer>
-      <div className="row">
-        <div className="six columns info">
 
-          <div className="footer-logo">
-            <AnchorLink to="/">
-              <img src={ footer.logo } alt="" />
-            </AnchorLink>
-          </div>
-
-          <p>{ footer.text }</p>
-
-        </div>
-
-        <div className="six columns right-cols">
-          <div className="row">
-            
-
-            <div className="columns">
-              <FontAwesomeIcon icon={ faUsers } />
-              <h3 className="social">socialize</h3>
-              <ul>
-                { social.map(mySocial =>
-                  <li><a href={ mySocial.url }>
-                    { mySocial.service }
-                  </a></li>
-                )}
-              </ul>
-            </div>
-
-            <div className="columns last">
-              <FontAwesomeIcon icon={ faEnvelope } />
-              <h3 className="contact">Contact Us</h3>
-              <ul>
-                { contacts.map((contact, index) =>
-                  <li><a href={ contact.url }>{ contact.text }</a></li>
-                )}
-              </ul>
-            </div>
-        </div>
+      <div className="footer-logo">
+        <AnchorLink to="/">
+          <img src={ footer.logo } alt="" />
+        </AnchorLink>
       </div>
-
+      
+      <FooterSocial/>
+    
       <p className="copyright">&copy; 2021 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Ported to Gatsby by <a href="https://github.com/desmukh/gatsby-starter-woo" title="Fahad Desmukh">Fahad Desmukh</a> | Customized by <a href="https://about.me/giovanebribeiro" title="Giovane Boaviagem">Giovane Boaviagem</a></p>
 
       <div id="go-top">
@@ -59,7 +28,6 @@ export default () => {
           <FontAwesomeIcon icon={ faChevronUp } />
         </button>
       </div>
-    </div>
-  </footer>
+    </footer>
 
 )}
