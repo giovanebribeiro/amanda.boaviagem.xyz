@@ -21,10 +21,11 @@ module.exports = {
       `bio`,
       `cv`,
       `testimonials`,
+      `subscribe`,
       /*`features`,
       `call-to-action`,
       `screenshots`,
-      `subscribe`,*/
+      */
     ],
 
     /* Configure the navigation menu */
@@ -56,7 +57,7 @@ module.exports = {
 
     /* Logo and text to show in footer */
     footer: {
-      logo: `/images/logoFooter.png`,
+      logo: `/images/AB-footer.svg`,
       text: `A escritora da esperança / mais de 1k de visualizações no Luvbook / Menção honrosa no 3º Prêmio de Literatura Juvenil Ferreira de Castro (2006 - Portugal) / Uma das vencedoras na coletânea do IX Concurso Ladjane Bandeira de Poesia `,
     },
 
