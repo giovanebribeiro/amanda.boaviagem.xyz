@@ -14,7 +14,7 @@ export default () => (
 
           <div className={ 'six columns award-box'}>
             <div className={'center'}>
-              <h1 className={'fa-4x'}><FontAwesomeIcon icon={faGraduationCap} /></h1>
+              <h1><img src="/images/cv/ICONE CURSO.svg" border="0"/></h1>
             </div>
           </div>
 
