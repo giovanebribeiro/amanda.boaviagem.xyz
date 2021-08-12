@@ -21,10 +21,11 @@ module.exports = {
       `bio`,
       `cv`,
       `testimonials`,
+      `subscribe`,
       /*`features`,
       `call-to-action`,
       `screenshots`,
-      `subscribe`,*/
+      */
     ],
 
     /* Configure the navigation menu */
