@@ -22,16 +22,16 @@ export default () => (
       let media = ( <img border="0" src={ value.cover } alt="" /> )
 
       return(
-        <div className={ 'row store left' }>
-          <div className={ 'six columns ' + pos }>
+        <div className={ 'row store' }>
+          <div className={ 'eight columns ' + pos }>
             <h3>{ value.title + ' - ' + value.author }</h3>
-            <br/><br/>
+            <br/>
             <p style={{textAlign: "justify"}}>{ value.body }</p>
             <br/>
             <a className="button button-sale" target="blank" href={value.link}>Quero ler</a>
           </div>
 
-          <div className={ 'six columns feature-media ' + imagepos}>
+          <div className={ 'four columns feature-media ' + imagepos}>
             { media }
           </div>
         </div>

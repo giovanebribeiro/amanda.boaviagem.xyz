@@ -250,10 +250,15 @@ ul.nav li.current button { color: #fff; }
    padding-top: 96px;
    overflow: hidden;;
 }
+
 #store .store {
    margin-top: 30px;
    margin-bottom: 54px;
+   margin-left: auto;
+   margin-right: auto;
+   width: 100%;
 }
+
 #store .right {
    padding-left: 32px;
    float: right;
