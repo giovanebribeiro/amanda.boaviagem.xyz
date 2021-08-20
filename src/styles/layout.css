@@ -58,7 +58,7 @@ body { background: #f9fbf4; }
 /* ------------------------------------------------------------------ */
 
 header {
-   height: 100px;
+   height: auto;
    width: 100%;
    background: #2d638e;
    position: fixed;
@@ -176,7 +176,7 @@ ul.nav li.current button { color: #fff; }
 /* ------------------------------------------------------------------ */
 
 #hero {
-   height: 790px;
+   height: auto;
    width: 100%;
    overflow: hidden;
    display: block;
@@ -191,12 +191,12 @@ ul.nav li.current button { color: #fff; }
 
 #about {
    background: #accae2 url(img/about-bg.png);
-   height: 600px;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;
    background-repeat: no-repeat;
-   padding-top: 96px;
+   padding-top: 60px;
    overflow: hidden;
 }
 #about .about-box {
@@ -242,7 +242,7 @@ ul.nav li.current button { color: #fff; }
 
 #store {
    background: #accae2 url(img/store-bg.png);
-   height: 790px;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;
@@ -284,6 +284,10 @@ ul.nav li.current button { color: #fff; }
    color: #222;
    line-height: 17px;
 }
+#store li {
+   display: inline;
+   padding-left: 15px;
+}
 
 .fluid-video-wrapper { margin-top: 18px; }
 
@@ -292,7 +296,7 @@ ul.nav li.current button { color: #fff; }
 /* ------------------------------------------------------------------ */
 #bio {
    background: #accae2 url(img/bio-bg.png);
-   height: 790px;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;
@@ -332,7 +336,7 @@ ul.nav li.current button { color: #fff; }
 /* ------------------------------------------------------------------ */
 #cv {
    background: #accae2 url(img/cv-bg.png);
-   height: 300px;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;
@@ -388,7 +392,7 @@ ul.nav li.current button { color: #fff; }
 /* ------------------------------------------------------------------ */
 
 #testimonials {
-   height: 790px;
+   height: auto;
    width: 100%;
    overflow: hidden;
    display: block;
@@ -412,7 +416,7 @@ ul.nav li.current button { color: #fff; }
 
 #subscribe {
    background: url(img/contact-bg.png);
-   height: 100%;
+   height: auto;
    width: 100%;
    background-size: cover;
    background-position: center;

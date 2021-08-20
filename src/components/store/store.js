@@ -28,7 +28,10 @@ export default () => (
             <br/>
             <p style={{textAlign: "justify"}}>{ value.body }</p>
             <br/>
-            <a className="button button-sale" target="blank" href={value.link}>Quero ler</a>
+            <ul>
+              <li><a className="button button-sale" target="blank" href={value.link}>Quero ler digitalmente</a></li>
+              <li><a className="button button-sale" target="blank" href={value.link}>Quero ler fisicamente</a></li>
+            </ul>
           </div>
 
           <div className={ 'four columns feature-media ' + imagepos}>
