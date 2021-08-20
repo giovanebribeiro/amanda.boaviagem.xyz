@@ -30,7 +30,7 @@ export default () => (
             <br/>
             <ul>
               <li><a className="button button-sale" target="blank" href={value.link}>Quero ler digitalmente</a></li>
-              <li><a className="button button-sale" target="blank" href={value.link}>Quero ler fisicamente</a></li>
+              <li><a className="button button-sale" target="blank" href={value.link2}>Quero ler fisicamente</a></li>
             </ul>
           </div>
 
