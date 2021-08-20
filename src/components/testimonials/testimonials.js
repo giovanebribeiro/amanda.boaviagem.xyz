@@ -32,7 +32,7 @@ const MySlider = () =>{
   return (
     <section id="testimonials">
       <h2><img border="0" src="/images/testimonials/title.png"/></h2>
-      <div>
+      <div style={{backgroundColor: "#E3EAEF"}}>
           <Slider {...settings} style={{ userSelect: 'text' }}>
             { content.quotes.map((quote, index) => (
 

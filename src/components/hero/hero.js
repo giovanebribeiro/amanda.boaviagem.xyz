@@ -30,7 +30,7 @@ const MySlider = () =>{
   return (
     <section id="hero">
         
-          <div>
+          <div style={{backgroundColor: "#ACCAE2"}}>
           <Slider {...settings}>
             { content.quotes.map((quote, index) => (
                     
