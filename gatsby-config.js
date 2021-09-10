@@ -8,10 +8,12 @@ module.exports = {
   /* Your site config here */
   siteMetadata: {
     title: `Amanda Boaviagem`,
+    titleTemplate: '%s · Amanda Boaviagem',
     author: {
       name: `Giovane Boaviagem`,
     },
-    description: `Woo is a clean, modern, landing page site template.`,
+    description: `Site pessoal da escritora Amanda Boaviagem`,
+    url: `https://amanda.boaviagem.xyz`,
 
     /* Choose and arrange the sections to be displayed on the landing page */
     sections: [

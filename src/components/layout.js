@@ -26,14 +26,12 @@ export default function Layout ({ children }){
   return(
     <>
     <Helmet>
-      <title>{ title }</title>
-      <meta name="description" content={ description } />
-      <meta name="author" content={ author.name } />
-
+      <meta charSet="utf-8"/>
+      <html lang="en" />
+      <link rel="canonical" href="https://amanda.boaviagem.xyz"/>
     	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
       <meta name="facebook-domain-verification" content="1c1b34t00xiyv4fd1u3ibjzfk2uw3w" />
-
       <link rel="shortcut icon" href={'/' + favicon } type="image/png" />
     </Helmet>
 

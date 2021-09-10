@@ -9,6 +9,7 @@ import Bio from "../components/bio/bio"
 import CV from "../components/cv/cv"
 import Testimonials from "../components/testimonials/testimonials"
 import Subscribe from "../components/subscribe/subscribe"
+import SEO from "../components/seo"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
@@ -27,6 +28,7 @@ export default () => {
   return(
     <>
       <Layout>
+        <SEO customTitle="Home"/> 
         {/* Style Guide Section
         ================================================== */}
         <section id="styles"
