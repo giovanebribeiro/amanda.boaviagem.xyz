@@ -21,7 +21,7 @@ export default () => {
       
       <FooterSocial/>
     
-      <p className="copyright">&copy; 2021 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Ported to Gatsby by <a href="https://github.com/desmukh/gatsby-starter-woo" title="Fahad Desmukh">Fahad Desmukh</a> | Customized by <a href="https://about.me/giovanebribeiro" title="Giovane Boaviagem">Giovane Boaviagem</a></p>
+      <p className="copyright">&copy; 2021 Woo | Design by <a title="Styleshout" href="http://www.styleshout.com/">Styleshout</a> | Ported to Gatsby by <a href="https://github.com/desmukh/gatsby-starter-woo" title="Fahad Desmukh">Fahad Desmukh</a> | Customized by <a href="https://giovane.boaviagem.xyz" title="Giovane Boaviagem">Giovane Boaviagem</a></p>
 
       <div id="go-top">
         <button title="Back to Top" onClick={() => scrollTo('#top')}>

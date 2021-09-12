@@ -20,7 +20,7 @@ export default class LightboxExample extends Component {
       <section id="bio">
 
         <div className="row bio">
-          <h1>{ content.title }</h1>
+          <h2>{ content.title }</h2>
           <br/>
           <br/>
           <p style={{textAlign: "justify"}}>{ content.body }</p>

@@ -313,7 +313,7 @@ ul.nav li.current button { color: #fff; }
    color: #fff;
    line-height: 20px;
 }
-#bio h1 {
+#bio h2 {
    font: 32px 'Goldplay' sans-serif;
    color: #fff;
    text-align: center;
@@ -373,7 +373,7 @@ ul.nav li.current button { color: #fff; }
    color: #2d638e;
    line-height: 1px;
 }
-#cv h1 {
+#cv h2 {
    font: 50px 'Goldplay' sans-serif;
    color: #2d638e;
    text-align: center;

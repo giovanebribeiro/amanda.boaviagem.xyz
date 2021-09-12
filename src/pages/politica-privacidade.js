@@ -1,9 +1,15 @@
 import React from "react"
 import Layout from "../components/layout"
+import SEO from "../components/seo"
 
 export default () => (
   <>
     <Layout>
+
+        <SEO 
+           customTitle="Política de Privacidade"
+           description="Política de privacidade do site pessoal de Amanda Boaviagem"
+           />
 
         {/* Style Guide Section
         ================================================== */}
@@ -14,6 +20,9 @@ export default () => (
           }}
         >
           <div className="row section-head">
+            <br/>
+            <br/>
+            <br/>
             <h1>Política de privacidade.</h1>
           </div> {/* Row End*/}
 
