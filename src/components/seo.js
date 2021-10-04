@@ -9,6 +9,8 @@ import { useSiteMetadata } from "../hooks/use-site-metadata"
 const SEO = ({ customTitle, article, meta, keywords }) => {
 	const { pathName } = useLocation();
 
+	keywords = keywords || [];
+
 	const {
 		title,
 		description,
