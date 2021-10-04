@@ -10,7 +10,7 @@ module.exports = {
     title: `Amanda Boaviagem`,
     titleTemplate: '%s · Amanda Boaviagem',
     author: {
-      name: `Giovane Boaviagem`,
+      name: `Amanda Boaviagem`,
     },
     description: `Site pessoal da escritora Amanda Boaviagem`,
     url: `https://amanda.boaviagem.xyz`,

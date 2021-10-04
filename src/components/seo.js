@@ -6,12 +6,13 @@ import { useStaticQuery, graphql, StaticQuery } from "gatsby"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-const SEO = ({ customTitle, article }) => {
+const SEO = ({ customTitle, article, meta, keywords }) => {
 	const { pathName } = useLocation();
 
 	const {
 		title,
 		description,
+		author,
 		url,
 		logo,
 		titleTemplate
@@ -25,9 +26,50 @@ const SEO = ({ customTitle, article }) => {
 	}
 
 	return (
-		<Helmet title={seo.title} titleTemplate={titleTemplate}>
+		<Helmet 
+			title={seo.title} 
+			titleTemplate={titleTemplate}
+			meta={[
+				{
+				  name: `description`,
+				  content: description,
+				},
+				{
+				  property: `og:title`,
+				  content: title,
+				},
+				{
+				  property: `og:description`,
+				  content: description,
+				},
+				{
+				  name: `instagram:card`,
+				  content: `profile`,
+				},
+				{
+				  name: `instagram:creator`,
+				  content: author.name,
+				},
+				{
+				  name: `instagram:title`,
+				  content: `pagina90_`,
+				},
+				{
+				  name: `instagram:description`,
+				  content: `A escritora da esperança`,
+				},
+			  ]
+				.concat(
+				  keywords.length > 0
+					? {
+						name: `keywords`,
+						content: keywords.join(`, `),
+					  }
+					: []
+				)
+				.concat(meta)}
+			>
 
-			<meta name="description" content={seo.description}/>
 			<meta name="image" content={seo.image}/>
 			<meta charSet="utf-8"/>
 			<meta name="facebook-domain-verification" content="1c1b34t00xiyv4fd1u3ibjzfk2uw3w" />
@@ -37,10 +79,6 @@ const SEO = ({ customTitle, article }) => {
 			
 			{ (article ? true: null) && <meta property="og:type" content="article" /> }
 
-			{ seo.title && <meta property="og:title" content={seo.title} /> }
-			
-			{ seo.description && <meta property="og:description" content={seo.description} /> }
-			
 			{ seo.image && <meta property="og:image" content={seo.image} /> }
 			
 			<link rel="canonical" href="https://amanda.boaviagem.xyz"/>
