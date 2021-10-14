@@ -6,7 +6,7 @@ import { useStaticQuery, graphql, StaticQuery } from "gatsby"
 
 import { useSiteMetadata } from "../hooks/use-site-metadata"
 
-const SEO = ({ customTitle, article, meta, keywords }) => {
+const SEO = ({ customTitle, article, meta, keywords, lang }) => {
 	const { pathName } = useLocation();
 
 	keywords = keywords || [];
@@ -17,7 +17,8 @@ const SEO = ({ customTitle, article, meta, keywords }) => {
 		author,
 		url,
 		logo,
-		titleTemplate
+		titleTemplate,
+		favicon
 	} = useSiteMetadata();
 
 	const seo = {
@@ -29,12 +30,19 @@ const SEO = ({ customTitle, article, meta, keywords }) => {
 
 	return (
 		<Helmet 
+			htmlAttributes={{
+				lang,
+			}}
 			title={seo.title} 
 			titleTemplate={titleTemplate}
 			meta={[
 				{
 				  name: `description`,
 				  content: description,
+				},
+				{
+					name: `og:type`,
+					content: `website`
 				},
 				{
 				  property: `og:title`,
@@ -74,13 +82,13 @@ const SEO = ({ customTitle, article, meta, keywords }) => {
 
 			<meta name="image" content={seo.image}/>
 			<meta charSet="utf-8"/>
+
+			<link rel="shortcut icon" href={'/' + favicon } type="image/png" />
 			<meta name="facebook-domain-verification" content="1c1b34t00xiyv4fd1u3ibjzfk2uw3w" />
 			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1" />
 
 			{ seo.url && <meta property="og:url" content={seo.url} /> }
 			
-			{ (article ? true: null) && <meta property="og:type" content="article" /> }
-
 			{ seo.image && <meta property="og:image" content={seo.image} /> }
 			
 			<link rel="canonical" href="https://amanda.boaviagem.xyz"/>
@@ -98,11 +106,13 @@ SEO.propTypes = {
 	description: PropTypes.string,
 	image: PropTypes.string,
 	article: PropTypes.bool,
+	lang: PropTypes.string
 }
 
 SEO.defaultProps = {
 	customTitle: null,
 	description: null,
 	image: null,
-	article: false
+	article: false,
+	lang: `pt-BR`
 }

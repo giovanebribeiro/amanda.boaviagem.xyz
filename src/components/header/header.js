@@ -10,7 +10,6 @@ export default () => (
       <div className="logo">
          <AnchorLink to="/#top">
            <img alt="" src={ useSiteMetadata().logo } />
-
          </AnchorLink>
       </div>
 
