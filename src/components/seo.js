@@ -17,6 +17,7 @@ function SEO({ description, lang, meta, keywords, title }) {
         site {
           siteMetadata {
             title
+            titleTemplate
             description
             author {
               name
@@ -34,12 +35,10 @@ function SEO({ description, lang, meta, keywords, title }) {
       htmlAttributes={{
         lang,
       }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
       meta={[
         {
           name: `description`,
-          content: metaDescription,
+          content: metaDescription.slice(0,160),
         },
         {
           name: `facebook-domain-verification`,
@@ -83,7 +82,9 @@ function SEO({ description, lang, meta, keywords, title }) {
             : []
         )
         .concat(meta)}
-    />
+    >
+      <title>{title} · Amanda Boaviagem</title>
+    </Helmet>
   )
 }
 

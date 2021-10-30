@@ -14,7 +14,7 @@ export default () => (
 
           <div className={ 'six columns award-box'}>
             <div className={'center'}>
-              <h2><img src="/images/cv/ICONE CURSO.svg" border="0"/></h2>
+              <h2><img src="/images/cv/ICONE CURSO.svg" border="0" alt="icone_curso"/></h2>
             </div>
           </div>
 

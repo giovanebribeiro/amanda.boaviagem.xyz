@@ -9,7 +9,7 @@ export default () => (
 
     <div className="row">
       <div className={ 'five columns left zap'}>
-        <a href="https://wa.me/message/AKIVPN2G3U6JF1"><img src="/images/contact/zap_button.svg"/></a>
+        <a href="https://wa.me/message/AKIVPN2G3U6JF1"><img src="/images/contact/zap_button.svg" alt="zap_button"/></a>
       </div>
 
       <div className="six columns right">

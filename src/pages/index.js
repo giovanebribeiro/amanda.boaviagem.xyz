@@ -28,7 +28,7 @@ export default () => {
   return(
     <>
       <Layout>
-        <SEO customTitle="Home" keywords={[`gatsby`, `application`, `react`, `escrita`, `literatura`, `amanda boaviagem`]}/> 
+        <SEO title="Home" keywords={[`escrita`, `writing`, `literature`, `author`, `livro`, `book`, `amanda`, `boaviagem`, `literatura`]}/> 
         {/* Style Guide Section
         ================================================== */}
         <section id="styles"

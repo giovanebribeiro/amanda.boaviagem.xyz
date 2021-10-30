@@ -5,7 +5,7 @@ export default () => (
 
   <section id='store'>
 
-    <h2><img border="0" src="/images/store/loja_title.png"/></h2>
+    <h2><img border="0" src="/images/store/loja_title.png" alt="loja_title"/></h2>
 
 
     {content.itens.map((value, index) => {
