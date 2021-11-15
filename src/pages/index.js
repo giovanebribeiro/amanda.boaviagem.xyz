@@ -28,7 +28,23 @@ export default () => {
   return(
     <>
       <Layout>
-        <SEO title="Home" keywords={[`escrita`, `writing`, `literature`, `author`, `livro`, `book`, `amanda`, `boaviagem`, `literatura`]}/> 
+        <SEO title="Home" keywords={[
+              `escritora`,
+              `escritora brasileira`,
+              `escritora famosa`,
+              `escritora ou autora`,
+              `autora ou escritora`,
+              `autora`,
+              `escrita`,  
+              `writing`, 
+              `literature`, 
+              `author`, 
+              `livro`, 
+              `book`, 
+              `amanda`, 
+              `boaviagem`, 
+              `literatura`,
+              `pagina90`]}/> 
         {/* Style Guide Section
         ================================================== */}
         <section id="styles"
