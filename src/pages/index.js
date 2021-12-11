@@ -29,7 +29,10 @@ export default () => {
     <>
       <Layout>
         <SEO title="Home" keywords={[
+              `amanda`, 
+              `boaviagem`, 
               `escritora`,
+              `pagina90`,
               `escritora brasileira`,
               `escritora famosa`,
               `escritora ou autora`,
@@ -41,10 +44,8 @@ export default () => {
               `author`, 
               `livro`, 
               `book`, 
-              `amanda`, 
-              `boaviagem`, 
               `literatura`,
-              `pagina90`]}/> 
+              ]}/> 
         {/* Style Guide Section
         ================================================== */}
         <section id="styles"

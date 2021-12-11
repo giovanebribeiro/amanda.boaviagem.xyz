@@ -34,7 +34,7 @@ const MySlider = () =>{
           <Slider {...settings}>
             { content.quotes.map((quote, index) => (
                     
-              <h1><img src={ quote.img } alt={quote.alt} /></h1>
+              <h1 key={quote.key}><img key={ quote.key } src={ quote.img } alt={quote.alt} /></h1>
               
             ))}
           </Slider>

@@ -29,8 +29,9 @@ export default () => (
             <p style={{textAlign: "justify"}}>{ value.body }</p>
             <br/>
             <ul>
-              <li><a className="button button-sale" target="blank" href={value.link}>Quero ler digitalmente</a></li>
-              <li><a className="button button-sale" target="blank" href={value.link2}>Quero ler fisicamente</a></li>
+              {value.links.map((link, index) => {
+                return (<li><a className="button button-sale" target="blank" href={link.link}>Link {link.name}</a></li>)
+              })}
             </ul>
           </div>
 
