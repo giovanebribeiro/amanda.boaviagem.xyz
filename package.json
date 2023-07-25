@@ -2,6 +2,7 @@
   "version": "2.0.0",
   "private": true,
   "scripts": {
+    "prepare": "husky install",
     "dev": "npm run prebuild && next dev",
     "prebuild": "next lint",
     "build": "next build",
@@ -22,8 +23,11 @@
     "react-router-dom": "^6.14.1"
   },
   "devDependencies": {
+    "@commitlint/cli": "^17.6.7",
+    "@commitlint/config-conventional": "^17.6.7",
     "eslint": "8.43.0",
     "eslint-config-next": "13.4.6",
+    "husky": "^8.0.3",
     "standard-version": "^9.5.0"
   }
 }
