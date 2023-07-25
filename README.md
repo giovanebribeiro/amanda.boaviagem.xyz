@@ -1,4 +1,5 @@
 # site-amanda-boaviagem
+[![Netlify Status](https://api.netlify.com/api/v1/badges/198c8a6e-b87c-49d0-809d-ff81959891df/deploy-status)](https://app.netlify.com/sites/epic-pare-6a511b/deploys)
 
 Projeto referente ao site da escritora Amanda Boaviagem. 
 
