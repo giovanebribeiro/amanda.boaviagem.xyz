@@ -25,8 +25,11 @@ $ npm run lint
 # Preparando a aplicação para deploy (Aplicação estará disponível na pasta out/)
 $ npm run build
 
-# dexecutando a aplicação local com compilação otimizada para produção (acessar http://localhost:3000)
+# Executando a aplicação local com compilação otimizada para produção (acessar http://localhost:3000)
 $ npm run start
+
+# Executando procedimentos de release, changelog, etc.
+$ npm run release
 
 ```
 
