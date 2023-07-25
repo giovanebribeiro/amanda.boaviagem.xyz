@@ -1,0 +1,27 @@
+{
+  "version": "02.00.00",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "prebuild": "next lint",
+    "build": "next build",
+    "start": "next start",
+    "export": "next export",
+    "app": "npm run build && npm run export"
+  },
+  "dependencies": {
+    "@nextui-org/react": "^1.0.0-beta.13",
+    "@react-icons/all-files": "^4.1.0",
+    "axios": "^1.4.0",
+    "next": "^13.4.8",
+    "react": "18.2.0",
+    "react-device-detect": "^2.2.3",
+    "react-dom": "18.2.0",
+    "react-responsive-carousel": "^3.2.23",
+    "react-router-dom": "^6.14.1"
+  },
+  "devDependencies": {
+    "eslint": "8.43.0",
+    "eslint-config-next": "13.4.6"
+  }
+}
